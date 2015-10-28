@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>dummy 회원정보 입력</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>dummy 회원정보 입력</h1>
+	<form action='insertUser' method = 'post' ><!--multipart/form-data로 변경-->
+		<p><input type ="text" name='email' placeholder="이메일" required></p>
+		<p><input type ="text" name='pwd' placeholder="비밀번호" required></p>
+		<p><input type ="text" name='name' placeholder="이름" required></p>
+		<p><input type ="text" name='nick' placeholder="별명" required><p>
+		<p><input type ="file" name='profile' placeholder="프로필사진"></p>
+		<p><input type ="text" name='phone' placeholder="핸드폰"></p>
+		<textarea row ='4' cols ='30' name='intro' value='내 소개'></textarea>
+		<p><button>입력</button></p>
+	</form>
+  </body>
+</html>
